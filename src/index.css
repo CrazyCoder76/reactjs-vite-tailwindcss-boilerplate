@@ -12,5 +12,5 @@
 }
 
 .body {
-  @apply font-secondary;
+  @apply font-secondary font-normal;
 }

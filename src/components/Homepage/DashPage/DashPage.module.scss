@@ -1,0 +1,20 @@
+.root {
+    @apply flex w-full justify-center;
+
+    .dashImage {
+        @apply flex flex-col justify-start sm:justify-center items-center gap-y-[20px] lg:gap-y-[40px] w-full h-auto lg:h-[45vw] lg:w-[72vw] overflow-visible pt-[110px] pb-[64px] sm:pt-[130px] lg:pt-0 lg:pb-0 bg-no-repeat bg-[length:130%_auto] bg-top sm:bg-[length:100%_auto];
+    }
+
+    .dashTitle {
+        @apply relative h-fit flex flex-col items-center justify-center gap-y-2 lg:gap-y-6;
+        
+        .title {
+            @apply text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px] xl:text-[80px] 2xl:text-[120px] text-center text-primary font-primary font-normal leading-[100%] tracking-[-2px] lg:tracking-[-6px] capitalize;
+        }
+        .description {
+            @apply px-8 xl:px-[180px] 2xl:px-[240px] 3xl:px-[360px] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-center text-secondary;
+        }
+    }
+
+    
+}

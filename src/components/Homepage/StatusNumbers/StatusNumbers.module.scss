@@ -1,0 +1,17 @@
+.root {
+    @apply flex w-full justify-center 2xl:w-auto 2xl:block 2xl:float-right xl:mt-[-60px] 2xl:mt-[-120px] 3xl:mt-[-180px] 3xl:mr-[80px];
+        
+    .textContainer {
+        @apply flex items-center justify-start gap-x-9 rounded-[17px] bg-white/50 backdrop-blur-[32px] px-6 py-6 w-fit 2xl:gap-x-[70px];
+
+        .textCell {
+            @apply flex flex-col items-start gap-y-[6px];
+            .textNumber {
+                @apply text-primary font-secondary text-[38px] 2xl:text-[58px] font-bold leading-[100%];
+            }
+            .textDescription {
+                @apply text-secondary font-secondary text-[16px] 2xl:text-[24px] font-semibold leading-6 capitalize whitespace-nowrap;
+            }
+        }
+    }
+}

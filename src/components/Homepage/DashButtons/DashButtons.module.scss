@@ -1,0 +1,15 @@
+@mixin button {
+    @apply w-full rounded-full border-[1.125px] py-[16.872px] sm:px-[30px] flex justify-center items-center gap-[12px] text-[16px] sm:text-[22px] font-bold transition duration-300 whitespace-nowrap;
+}
+.root {
+    @apply flex flex-col w-full gap-y-2 sm:flex-row sm:gap-x-[20px] sm:w-min;
+
+    .btn1 {
+        @apply text-button border-primary fill-primary stroke-primary hover:stroke-white hover:bg-primary hover:text-white hover:fill-white;
+        @include button;
+    }
+    .btn2 {
+        @apply text-white border-primary bg-primary fill-white stroke-white hover:stroke-primary hover:bg-transparent hover:text-button hover:fill-primary;
+        @include button;
+    }
+}
